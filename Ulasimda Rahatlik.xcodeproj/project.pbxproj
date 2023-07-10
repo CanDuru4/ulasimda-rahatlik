@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E5338A54BCDEA1F3C72A10C /* Pods_Ulasimda_Rahatlik_Ulasimda_RahatlikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82ADD9186E37279E5F51D8BE /* Pods_Ulasimda_Rahatlik_Ulasimda_RahatlikUITests.framework */; };
+		1F0E102B2969AB5F007100E1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E102A2969AB5F007100E1 /* LocationManager.swift */; };
+		1F0E102D2969AC10007100E1 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0E102C2969AC10007100E1 /* CustomAnnotation.swift */; };
 		1F26614229699E6A00CA5608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26614129699E6A00CA5608 /* AppDelegate.swift */; };
 		1F26614429699E6A00CA5608 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26614329699E6A00CA5608 /* SceneDelegate.swift */; };
 		1F26614629699E6A00CA5608 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26614529699E6A00CA5608 /* ViewController.swift */; };
-		1F26614929699E6A00CA5608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F26614729699E6A00CA5608 /* Main.storyboard */; };
 		1F26614B29699E6D00CA5608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F26614A29699E6D00CA5608 /* Assets.xcassets */; };
 		1F26614E29699E6D00CA5608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F26614C29699E6D00CA5608 /* LaunchScreen.storyboard */; };
 		1F26615929699E6D00CA5608 /* Ulasimda_RahatlikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26615829699E6D00CA5608 /* Ulasimda_RahatlikTests.swift */; };
 		1F26616329699E6E00CA5608 /* Ulasimda_RahatlikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26616229699E6E00CA5608 /* Ulasimda_RahatlikUITests.swift */; };
 		1F26616529699E6E00CA5608 /* Ulasimda_RahatlikUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26616429699E6E00CA5608 /* Ulasimda_RahatlikUITestsLaunchTests.swift */; };
+		1F26617229699FB900CA5608 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F26617129699FB900CA5608 /* GoogleService-Info.plist */; };
+		1F58857F2969FCC900F389D8 /* can-duru-menu-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F58857E2969FCC900F389D8 /* can-duru-menu-logo.png */; };
+		74B9A50C706ABF74E764A2EA /* Pods_Ulasimda_RahatlikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20ADFC2C263FE6FBF9C5FDC /* Pods_Ulasimda_RahatlikTests.framework */; };
+		C39A7067846FD7F147EF5EBA /* Pods_Ulasimda_Rahatlik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25AFFAA627EA53C9A51DDC1 /* Pods_Ulasimda_Rahatlik.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A9E5FB0AD516195FCE17795 /* Pods-Ulasimda RahatlikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ulasimda RahatlikTests.release.xcconfig"; path = "Target Support Files/Pods-Ulasimda RahatlikTests/Pods-Ulasimda RahatlikTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F0E102A2969AB5F007100E1 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		1F0E102C2969AC10007100E1 /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		1F26613E29699E6A00CA5608 /* Ulasimda Rahatlik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ulasimda Rahatlik.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F26614129699E6A00CA5608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F26614329699E6A00CA5608 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1F26614529699E6A00CA5608 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1F26614829699E6A00CA5608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F26614A29699E6D00CA5608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F26614D29699E6D00CA5608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F26614F29699E6D00CA5608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +57,18 @@
 		1F26615E29699E6E00CA5608 /* Ulasimda RahatlikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ulasimda RahatlikUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F26616229699E6E00CA5608 /* Ulasimda_RahatlikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ulasimda_RahatlikUITests.swift; sourceTree = "<group>"; };
 		1F26616429699E6E00CA5608 /* Ulasimda_RahatlikUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ulasimda_RahatlikUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1F26617129699FB900CA5608 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1F56AF4A2A5CA80C006F79B8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1F56AF4B2A5CA815006F79B8 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		1F58857E2969FCC900F389D8 /* can-duru-menu-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "can-duru-menu-logo.png"; path = "Ulasimda Rahatlik/Photos/can-duru-menu-logo.png"; sourceTree = SOURCE_ROOT; };
+		2C8BDEA8A5C554E0FABC0385 /* Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests.release.xcconfig"; path = "Target Support Files/Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests/Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7191EA69033B75FD4BE550FA /* Pods-Ulasimda Rahatlik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ulasimda Rahatlik.debug.xcconfig"; path = "Target Support Files/Pods-Ulasimda Rahatlik/Pods-Ulasimda Rahatlik.debug.xcconfig"; sourceTree = "<group>"; };
+		82ADD9186E37279E5F51D8BE /* Pods_Ulasimda_Rahatlik_Ulasimda_RahatlikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ulasimda_Rahatlik_Ulasimda_RahatlikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20ADFC2C263FE6FBF9C5FDC /* Pods_Ulasimda_RahatlikTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ulasimda_RahatlikTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25AFFAA627EA53C9A51DDC1 /* Pods_Ulasimda_Rahatlik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ulasimda_Rahatlik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECB8061DC1B73BDD9E42439 /* Pods-Ulasimda Rahatlik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ulasimda Rahatlik.release.xcconfig"; path = "Target Support Files/Pods-Ulasimda Rahatlik/Pods-Ulasimda Rahatlik.release.xcconfig"; sourceTree = "<group>"; };
+		EAD463FAC7BE27AD7F5D36AA /* Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests/Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDC6A02252C3CC76712E4CA7 /* Pods-Ulasimda RahatlikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ulasimda RahatlikTests.debug.xcconfig"; path = "Target Support Files/Pods-Ulasimda RahatlikTests/Pods-Ulasimda RahatlikTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39A7067846FD7F147EF5EBA /* Pods_Ulasimda_Rahatlik.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B9A50C706ABF74E764A2EA /* Pods_Ulasimda_RahatlikTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E5338A54BCDEA1F3C72A10C /* Pods_Ulasimda_Rahatlik_Ulasimda_RahatlikUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +102,14 @@
 		1F26613529699E6A00CA5608 = {
 			isa = PBXGroup;
 			children = (
+				1F56AF4B2A5CA815006F79B8 /* CHANGELOG.md */,
+				1F56AF4A2A5CA80C006F79B8 /* README.md */,
 				1F26614029699E6A00CA5608 /* Ulasimda Rahatlik */,
 				1F26615729699E6D00CA5608 /* Ulasimda RahatlikTests */,
 				1F26616129699E6E00CA5608 /* Ulasimda RahatlikUITests */,
 				1F26613F29699E6A00CA5608 /* Products */,
+				6DDF749D6FBB7B0A8FB670CC /* Pods */,
+				FF29CFAAD84B1652244143C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +126,13 @@
 		1F26614029699E6A00CA5608 /* Ulasimda Rahatlik */ = {
 			isa = PBXGroup;
 			children = (
-				1F26614129699E6A00CA5608 /* AppDelegate.swift */,
-				1F26614329699E6A00CA5608 /* SceneDelegate.swift */,
+				1F5885802969FCD000F389D8 /* Photos */,
+				1F74655B2969E35D004FC863 /* Base Files */,
+				1F74655A2969E355004FC863 /* Helper */,
 				1F26614529699E6A00CA5608 /* ViewController.swift */,
-				1F26614729699E6A00CA5608 /* Main.storyboard */,
 				1F26614A29699E6D00CA5608 /* Assets.xcassets */,
 				1F26614C29699E6D00CA5608 /* LaunchScreen.storyboard */,
+				1F26617129699FB900CA5608 /* GoogleService-Info.plist */,
 				1F26614F29699E6D00CA5608 /* Info.plist */,
 			);
 			path = "Ulasimda Rahatlik";
@@ -127,6 +155,55 @@
 			path = "Ulasimda RahatlikUITests";
 			sourceTree = "<group>";
 		};
+		1F5885802969FCD000F389D8 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				1F58857E2969FCC900F389D8 /* can-duru-menu-logo.png */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		1F74655A2969E355004FC863 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1F0E102C2969AC10007100E1 /* CustomAnnotation.swift */,
+				1F0E102A2969AB5F007100E1 /* LocationManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1F74655B2969E35D004FC863 /* Base Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F26614129699E6A00CA5608 /* AppDelegate.swift */,
+				1F26614329699E6A00CA5608 /* SceneDelegate.swift */,
+			);
+			path = "Base Files";
+			sourceTree = "<group>";
+		};
+		6DDF749D6FBB7B0A8FB670CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7191EA69033B75FD4BE550FA /* Pods-Ulasimda Rahatlik.debug.xcconfig */,
+				CECB8061DC1B73BDD9E42439 /* Pods-Ulasimda Rahatlik.release.xcconfig */,
+				EAD463FAC7BE27AD7F5D36AA /* Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests.debug.xcconfig */,
+				2C8BDEA8A5C554E0FABC0385 /* Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests.release.xcconfig */,
+				FDC6A02252C3CC76712E4CA7 /* Pods-Ulasimda RahatlikTests.debug.xcconfig */,
+				1A9E5FB0AD516195FCE17795 /* Pods-Ulasimda RahatlikTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF29CFAAD84B1652244143C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C25AFFAA627EA53C9A51DDC1 /* Pods_Ulasimda_Rahatlik.framework */,
+				82ADD9186E37279E5F51D8BE /* Pods_Ulasimda_Rahatlik_Ulasimda_RahatlikUITests.framework */,
+				C20ADFC2C263FE6FBF9C5FDC /* Pods_Ulasimda_RahatlikTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,15 +211,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F26616829699E6E00CA5608 /* Build configuration list for PBXNativeTarget "Ulasimda Rahatlik" */;
 			buildPhases = (
+				7559183D899B8BC8C711733A /* [CP] Check Pods Manifest.lock */,
 				1F26613A29699E6A00CA5608 /* Sources */,
 				1F26613B29699E6A00CA5608 /* Frameworks */,
 				1F26613C29699E6A00CA5608 /* Resources */,
+				1FB38AD97676B2832936E8DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Ulasimda Rahatlik";
+			packageProductDependencies = (
+			);
 			productName = "Ulasimda Rahatlik";
 			productReference = 1F26613E29699E6A00CA5608 /* Ulasimda Rahatlik.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F26616B29699E6E00CA5608 /* Build configuration list for PBXNativeTarget "Ulasimda RahatlikTests" */;
 			buildPhases = (
+				802136E7EDCBB6B34E9F8899 /* [CP] Check Pods Manifest.lock */,
 				1F26615029699E6D00CA5608 /* Sources */,
 				1F26615129699E6D00CA5608 /* Frameworks */,
 				1F26615229699E6D00CA5608 /* Resources */,
@@ -169,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F26616E29699E6E00CA5608 /* Build configuration list for PBXNativeTarget "Ulasimda RahatlikUITests" */;
 			buildPhases = (
+				B500A51EBB1F715D83871AB7 /* [CP] Check Pods Manifest.lock */,
 				1F26615A29699E6E00CA5608 /* Sources */,
 				1F26615B29699E6E00CA5608 /* Frameworks */,
 				1F26615C29699E6E00CA5608 /* Resources */,
+				884C3E4D0665423112397929 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +299,8 @@
 				Base,
 			);
 			mainGroup = 1F26613529699E6A00CA5608;
+			packageReferences = (
+			);
 			productRefGroup = 1F26613F29699E6A00CA5608 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +317,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F58857F2969FCC900F389D8 /* can-duru-menu-logo.png in Resources */,
 				1F26614E29699E6D00CA5608 /* LaunchScreen.storyboard in Resources */,
+				1F26617229699FB900CA5608 /* GoogleService-Info.plist in Resources */,
 				1F26614B29699E6D00CA5608 /* Assets.xcassets in Resources */,
-				1F26614929699E6A00CA5608 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,12 +340,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FB38AD97676B2832936E8DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ulasimda Rahatlik/Pods-Ulasimda Rahatlik-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ulasimda Rahatlik/Pods-Ulasimda Rahatlik-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ulasimda Rahatlik/Pods-Ulasimda Rahatlik-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7559183D899B8BC8C711733A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ulasimda Rahatlik-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		802136E7EDCBB6B34E9F8899 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ulasimda RahatlikTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		884C3E4D0665423112397929 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests/Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests/Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests/Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B500A51EBB1F715D83871AB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F26613A29699E6A00CA5608 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0E102B2969AB5F007100E1 /* LocationManager.swift in Sources */,
 				1F26614629699E6A00CA5608 /* ViewController.swift in Sources */,
+				1F0E102D2969AC10007100E1 /* CustomAnnotation.swift in Sources */,
 				1F26614229699E6A00CA5608 /* AppDelegate.swift in Sources */,
 				1F26614429699E6A00CA5608 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +489,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1F26614729699E6A00CA5608 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F26614829699E6A00CA5608 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1F26614C29699E6D00CA5608 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +550,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +604,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -432,6 +616,7 @@
 		};
 		1F26616929699E6E00CA5608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7191EA69033B75FD4BE550FA /* Pods-Ulasimda Rahatlik.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,11 +625,13 @@
 				DEVELOPMENT_TEAM = NV57XZ3KBV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Ulasimda Rahatlik/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Kolay Ulaşım";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,14 +639,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CanDuru.Ulasimda-Rahatlik";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		1F26616A29699E6E00CA5608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CECB8061DC1B73BDD9E42439 /* Pods-Ulasimda Rahatlik.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -468,11 +659,13 @@
 				DEVELOPMENT_TEAM = NV57XZ3KBV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Ulasimda Rahatlik/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Kolay Ulaşım";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,14 +673,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CanDuru.Ulasimda-Rahatlik";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		1F26616C29699E6E00CA5608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDC6A02252C3CC76712E4CA7 /* Pods-Ulasimda RahatlikTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +705,7 @@
 		};
 		1F26616D29699E6E00CA5608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A9E5FB0AD516195FCE17795 /* Pods-Ulasimda RahatlikTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +726,7 @@
 		};
 		1F26616F29699E6E00CA5608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD463FAC7BE27AD7F5D36AA /* Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +745,7 @@
 		};
 		1F26617029699E6E00CA5608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C8BDEA8A5C554E0FABC0385 /* Pods-Ulasimda Rahatlik-Ulasimda RahatlikUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
