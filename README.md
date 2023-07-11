@@ -23,7 +23,7 @@
 ## Installation
 
 #### CocoaPods
-You can use [CocoaPods](http://cocoapods.org/) to install `SideMenu, Alamofire, DropDown, Firebase` by adding it to your `Podfile`:
+You can use [CocoaPods](http://cocoapods.org/) to install `Firebase` by adding it to your `Podfile`:
 
 ```ruby
   use_frameworks!
