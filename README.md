@@ -9,9 +9,13 @@
   </a>
 </p>
 
+## Status
+
+This application is currently in development stage.
+
 ## Meta
 
-Can Duru – canduru2004@gmail.com, can@canduru.net
+Can Duru – canduru2004@gmail.com, support@canduru.net
 
 
 [https://github.com/CanDuru4](https://github.com/CanDuru4)
