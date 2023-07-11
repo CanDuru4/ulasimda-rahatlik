@@ -9,9 +9,31 @@
   </a>
 </p>
 
-## Status
+## Features
 
-This application is currently in development stage.
+- [x] Live Bus Locations (updated every 10 seconds)
+- [x] View Temperature of the Bus
+- [x] View Status of Bus for Crowd
+
+## Requirements
+
+- iOS 14.0+
+- Xcode 14.3.1
+
+## Installation
+
+#### CocoaPods
+You can use [CocoaPods](http://cocoapods.org/) to install `SideMenu, Alamofire, DropDown, Firebase` by adding it to your `Podfile`:
+
+```ruby
+  use_frameworks!
+
+  pod 'FirebaseAnalytics'
+  pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
+  pod 'Firebase/Database'
+```
+
 
 ## Meta
 
