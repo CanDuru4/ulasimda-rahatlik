@@ -104,7 +104,7 @@
 			children = (
 				1F56AF4B2A5CA815006F79B8 /* CHANGELOG.md */,
 				1F56AF4A2A5CA80C006F79B8 /* README.md */,
-				1F26614029699E6A00CA5608 /* Ulasimda Rahatlik */,
+				1F26614029699E6A00CA5608 /* UlasimdaRahatlik */,
 				1F26615729699E6D00CA5608 /* Ulasimda RahatlikTests */,
 				1F26616129699E6E00CA5608 /* Ulasimda RahatlikUITests */,
 				1F26613F29699E6A00CA5608 /* Products */,
@@ -123,7 +123,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1F26614029699E6A00CA5608 /* Ulasimda Rahatlik */ = {
+		1F26614029699E6A00CA5608 /* UlasimdaRahatlik */ = {
 			isa = PBXGroup;
 			children = (
 				1F5885802969FCD000F389D8 /* Photos */,
@@ -135,7 +135,7 @@
 				1F26617129699FB900CA5608 /* GoogleService-Info.plist */,
 				1F26614F29699E6D00CA5608 /* Info.plist */,
 			);
-			path = "Ulasimda Rahatlik";
+			path = UlasimdaRahatlik;
 			sourceTree = "<group>";
 		};
 		1F26615729699E6D00CA5608 /* Ulasimda RahatlikTests */ = {
