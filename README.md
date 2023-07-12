@@ -5,7 +5,7 @@
 <br />
 <p align="center">
   <a href="https://canduru.net">
-    <img src="https://ibb.co/VTJ46YB" alt="Logo" width="221" height="90">
+    <img src="https://i.ibb.co/rHFr92y/Original-resized.png" alt="Logo" width="221" height="90">
   </a>
 </p>
 
