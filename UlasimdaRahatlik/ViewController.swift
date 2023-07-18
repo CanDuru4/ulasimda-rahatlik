@@ -47,6 +47,7 @@ class ViewController: UIViewController {
         mapLocation()
         setButton()
         BusData()
+        BusDataRepeat()
         busses = []
         map.delegate = self
     }
