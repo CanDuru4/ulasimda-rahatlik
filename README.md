@@ -1,6 +1,6 @@
 # Ulaşımda Rahatlık
 
-[![Platform](https://img.shields.io/badge/platform-iOS%2014.0%2B-lightgrey.svg)](https://developer.apple.com/ios/)
+[![Platform](https://img.shields.io/badge/platform-iOS%2015.0%2B-lightgrey.svg)](https://developer.apple.com/ios/)
 [![Swift Version](https://img.shields.io/badge/swift-5.0-orange.svg)](https://swift.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -10,7 +10,7 @@
   </a>
 </p>
 
-**Ulaşımda Rahatlık** ("comfort in transit") is a demo iOS app that puts city buses on a live map together with the temperature inside each bus and how crowded it is. Sensors wired to an Arduino UNO in the vehicle publish those readings to a Firebase Realtime Database; the app reads them back every 10 seconds and annotates each bus on a MapKit map. It is a proof-of-concept / portfolio project for anyone interested in a minimal IoT-to-mobile pipeline — the Arduino firmware and the Firebase project itself are **not** part of this repository.
+**Ulaşımda Rahatlık** ("comfort in transit") is a demo iOS app that puts city buses on a live map together with the temperature inside each bus and how crowded it is. Sensors wired to an Arduino UNO in the vehicle publish those readings to a Firebase Realtime Database; the app reads them back every 10 seconds and annotates each bus on a MapKit map. On the home screen the app is named **Kolay Ulaşım**, with a teal icon combining a thermometer and passengers. It is a proof-of-concept / portfolio project for anyone interested in a minimal IoT-to-mobile pipeline — the Arduino firmware and the Firebase project itself are **not** part of this repository.
 
 ## Features
 
@@ -25,16 +25,15 @@
 | --- | --- |
 | App | Swift 5.0, UIKit with programmatic Auto Layout, MapKit, CoreLocation |
 | Backend | Firebase Realtime Database (`FirebaseCore`, `FirebaseDatabase`, `FirebaseFirestore`) |
-| Dependencies | CocoaPods |
+| Dependencies | Swift Package Manager (Firebase 12.19.1) |
 | Hardware (external) | Arduino UNO with a temperature sensor and a camera |
 
 ## Getting started
 
 ### Prerequisites
 
-- macOS with Xcode 14.3.1 or newer
-- iOS 14.0+ device or simulator
-- [CocoaPods](https://cocoapods.org/)
+- macOS with Xcode 27 or newer
+- iOS 15.0+ device or simulator (test targets require iOS 17 or later)
 - A Firebase project with Realtime Database enabled
 
 ### Install
@@ -45,27 +44,11 @@
    git clone https://github.com/CanDuru4/UlasimdaRahatlik.git
    ```
 
-2. Create a `Podfile` next to `Ulasimda Rahatlik.xcodeproj` (it is not checked in) and install the pods:
-
-   ```ruby
-   platform :ios, '14.0'
-   use_frameworks!
-
-   target 'Ulasimda Rahatlik' do
-     pod 'FirebaseAnalytics'
-     pod 'FirebaseAuth'
-     pod 'FirebaseFirestore'
-     pod 'Firebase/Database'
-   end
-   ```
-
-   ```bash
-   pod install
-   ```
+2. Open `Ulasimda Rahatlik.xcodeproj` in Xcode 27 or later. Swift Package Manager resolves the pinned Firebase packages automatically; CocoaPods is no longer required.
 
 3. Add your own Firebase config file (see [Configuration](#configuration)).
 
-4. Open the generated `Ulasimda Rahatlik.xcworkspace` and run the `Ulasimda Rahatlik` scheme. The app asks for location access on first launch (`NSLocationWhenInUseUsageDescription`).
+4. Run the shared `Ulasimda Rahatlik` scheme. Without the Firebase config file the app shows a setup screen instead of calling Firebase. The app asks for location access on first launch (`NSLocationWhenInUseUsageDescription`).
 
 ### Configuration
 
@@ -97,7 +80,7 @@ Busses/
 
 ```
 .
-├── Ulasimda Rahatlik.xcodeproj/     Xcode project (CocoaPods-integrated)
+├── Ulasimda Rahatlik.xcodeproj/     Xcode project (Swift Package Manager)
 ├── UlasimdaRahatlik/
 │   ├── Base Files/                  AppDelegate (Firebase bootstrap), SceneDelegate
 │   ├── Base.lproj/                  LaunchScreen.storyboard
