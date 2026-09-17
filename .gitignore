@@ -106,7 +106,6 @@ iOSInjectionProject/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-**/UlasimdaRahatlik/GoogleService-Info.plist
 # End of https://www.toptal.com/developers/gitignore/api/xcode,swift,cocoapods
 
 # Local secrets and machine state (never commit)
@@ -116,3 +115,29 @@ xcuserdata/
 DerivedData/
 .build/
 *.xcresult
+
+### Secrets and credentials ###
+# Never commit these. Supply them locally; see README.md.
+GoogleService-Info.plist
+Keys.plist
+*.pem
+*.p8
+*.p12
+*.cer
+*.mobileprovision
+.env
+.env.*
+!.env.example
+
+### OS and editor files ###
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+### Other tooling ###
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+dist/
