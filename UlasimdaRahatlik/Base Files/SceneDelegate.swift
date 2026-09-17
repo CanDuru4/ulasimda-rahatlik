@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseCore
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -13,6 +14,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard FirebaseApp.app() != nil else {
+            guard let windowScene = scene as? UIWindowScene else { return }
+            let setupWindow = UIWindow(windowScene: windowScene)
+            let controller = UIViewController()
+            controller.view.backgroundColor = .systemBackground
+            let message = UILabel()
+            message.text = "Firebase setup required. Add this app's GoogleService-Info.plist to the app target and rebuild."
+            message.numberOfLines = 0
+            message.textAlignment = .center
+            message.translatesAutoresizingMaskIntoConstraints = false
+            controller.view.addSubview(message)
+            NSLayoutConstraint.activate([
+                message.leadingAnchor.constraint(equalTo: controller.view.safeAreaLayoutGuide.leadingAnchor, constant: 24),
+                message.trailingAnchor.constraint(equalTo: controller.view.safeAreaLayoutGuide.trailingAnchor, constant: -24),
+                message.centerYAnchor.constraint(equalTo: controller.view.centerYAnchor)
+            ])
+            setupWindow.rootViewController = controller
+            window = setupWindow
+            setupWindow.makeKeyAndVisible()
+            return
+        }
+
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).

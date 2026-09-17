@@ -1,7 +1,8 @@
 [![Swift Version][swift-image]][swift-url]
-[![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
 
-# Ulasimda Rahatlik
+# Kolay Ulaşım
+
+Kolay Ulaşım monitors temperature and passenger crowding on public transportation, alongside vehicle locations. Its teal app icon combines a thermometer and passengers to represent those measurements.
 <br />
 <p align="center">
   <a href="https://canduru.net">
@@ -17,27 +18,18 @@
 
 ## Requirements
 
-- iOS 14.0+
-- Xcode 14.3.1
+- iOS 15.0+
+- Xcode 27
 
 ## Installation
 
-#### CocoaPods
-You can use [CocoaPods](http://cocoapods.org/) to install `Firebase` by adding it to your `Podfile`:
+Open the `.xcodeproj` directly in Xcode 27 or later. Swift Package Manager resolves the pinned dependencies automatically; CocoaPods is no longer required. Firebase 12.19.1 requires iOS 15 or later (SponsorApp retains iOS 16). Test targets require iOS 17 or later.
 
-```ruby
-  use_frameworks!
-
-  pod 'FirebaseAnalytics'
-  pod 'FirebaseAuth'
-  pod 'FirebaseFirestore'
-  pod 'Firebase/Database'
-```
-
+Supply the app's existing `GoogleService-Info.plist` through the app target before using Firebase services. Missing configuration shows a setup screen without accessing Firebase.
 
 ## Meta
 
-Can Duru – canduru2004@gmail.com, support@canduru.net
+Can Duru , canduru2004@gmail.com, support@canduru.net
 
 
 [https://github.com/CanDuru4](https://github.com/CanDuru4)

@@ -8,7 +8,6 @@
 import UIKit
 import MapKit
 import CoreLocation
-import FirebaseFirestore
 import FirebaseCore
 import FirebaseDatabase
 
@@ -191,34 +190,42 @@ class ViewController: UIViewController {
     //MARK: Bus Data
     var timer = Timer()
     func BusDataRepeat(){
-        timer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true, block: { _ in
-            self.BusData()
+        timer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true, block: { [weak self] _ in
+            self?.BusData()
         })
     }
-    @objc func BusData(){
+    /// Refreshes bus annotations from a single validated database snapshot.
+    /// Replaces prior data to avoid duplicate buses after polling; malformed records are skipped.
+    /// - Parameters: None.
+    /// - Returns: No value. Updates the map after the asynchronous read completes.
+    /// - Throws: Does not throw. Failed reads retain the last successful snapshot.
+    /// - Example: `BusData()` refreshes the visible buses.
+    @objc func BusData() {
+        guard FirebaseApp.app() != nil else { return }
         let ref = Database.database().reference().child("Busses")
-        var name = ""
-        var crowd = 0
-        var latitude = 0.000
-        var longitude = 0.000
-        var temperature = 0
-        
-        
-        ref.observeSingleEvent(of: .value) { snapshot in
-            for case let child as DataSnapshot in snapshot.children {
-                guard let dict = child.value as? [String:Any] else {
-                    return
-                }
-                name = dict["name"] as! String
-                temperature = dict["temperature"] as! Int
-                crowd = dict["crowd"] as! Int
-                latitude = dict["latitude"] as! Double
-                longitude = dict["longitude"] as! Double
-                
-                self.busses.append(Busses(crowd: crowd, latitude: latitude, longitude: longitude, name: name, temperature: temperature))
+        ref.observeSingleEvent(of: .value) { [weak self] snapshot in
+            let buses = snapshot.children.compactMap { child -> Busses? in
+                guard let child = child as? DataSnapshot,
+                      let dict = child.value as? [String: Any],
+                      let name = dict["name"] as? String,
+                      let temperature = dict["temperature"] as? NSNumber,
+                      let crowd = dict["crowd"] as? NSNumber,
+                      let latitude = dict["latitude"] as? NSNumber,
+                      let longitude = dict["longitude"] as? NSNumber else { return nil }
+                let coordinate = CLLocationCoordinate2D(latitude: latitude.doubleValue, longitude: longitude.doubleValue)
+                guard CLLocationCoordinate2DIsValid(coordinate) else { return nil }
+                return Busses(crowd: crowd.intValue, latitude: coordinate.latitude, longitude: coordinate.longitude, name: name, temperature: temperature.intValue)
+            }
+            DispatchQueue.main.async {
+                self?.busses = buses
             }
         }
     }
+
+    deinit {
+        timer.invalidate()
+    }
+
 }
 
 

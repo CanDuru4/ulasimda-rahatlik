@@ -25,7 +25,9 @@ final class Ulasimda_RahatlikUITests: XCTestCase {
     func testExample() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
+        app.launchArguments = ["-FirebaseSetupPreview"]
         app.launch()
+        XCTAssertTrue(app.staticTexts["Firebase setup required. Add this app's GoogleService-Info.plist to the app target and rebuild."].waitForExistence(timeout: 10))
 
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
@@ -34,7 +36,9 @@ final class Ulasimda_RahatlikUITests: XCTestCase {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.
             measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
+                let app = XCUIApplication()
+                app.launchArguments = ["-FirebaseSetupPreview"]
+                app.launch()
             }
         }
     }

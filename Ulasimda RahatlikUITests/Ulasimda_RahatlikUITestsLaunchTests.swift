@@ -19,7 +19,9 @@ final class Ulasimda_RahatlikUITestsLaunchTests: XCTestCase {
 
     func testLaunch() throws {
         let app = XCUIApplication()
+        app.launchArguments = ["-FirebaseSetupPreview"]
         app.launch()
+        XCTAssertTrue(app.staticTexts["Firebase setup required. Add this app's GoogleService-Info.plist to the app target and rebuild."].waitForExistence(timeout: 10))
 
         // Insert steps here to perform after app launch but before taking a screenshot,
         // such as logging into a test account or navigating somewhere in the app
