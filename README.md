@@ -37,7 +37,7 @@ Ulaşımda Rahatlık ("comfort in transit") is a demo iOS app that puts city bus
 1. Clone the repository.
 
    ```bash
-   git clone https://github.com/CanDuru4/UlasimdaRahatlik.git
+   git clone https://github.com/CanDuru4/ulasimda-rahatlik.git
    ```
 
 2. Open `Ulasimda Rahatlik.xcodeproj` in Xcode. Swift Package Manager resolves the pinned Firebase packages automatically.
