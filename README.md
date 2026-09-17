@@ -1,23 +1,19 @@
 # Ulaşımda Rahatlık
 
-[![Platform](https://img.shields.io/badge/platform-iOS%2015.0%2B-lightgrey.svg)](https://developer.apple.com/ios/)
-[![Swift Version](https://img.shields.io/badge/swift-5.0-orange.svg)](https://swift.org/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Swift](https://img.shields.io/badge/Swift-5.0-F05138?style=flat&logo=swift&logoColor=white)](https://swift.org/)
+[![UIKit](https://img.shields.io/badge/UIKit-MapKit-2396F3?style=flat&logo=apple&logoColor=white)](https://developer.apple.com/documentation/mapkit)
+[![iOS](https://img.shields.io/badge/iOS-15.0%2B-000000?style=flat&logo=apple&logoColor=white)](https://developer.apple.com/ios/)
+[![Firebase](https://img.shields.io/badge/Firebase-12.19.1-FFCA28?style=flat&logo=firebase&logoColor=black)](https://firebase.google.com/docs/ios/setup)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat)](LICENSE)
 
-<p align="center">
-  <a href="https://canduru.net">
-    <img src="docs/assets/canduru-banner.png" alt="Can Duru" width="221" height="90">
-  </a>
-</p>
-
-**Ulaşımda Rahatlık** ("comfort in transit") is a demo iOS app that puts city buses on a live map together with the temperature inside each bus and how crowded it is. Sensors wired to an Arduino UNO in the vehicle publish those readings to a Firebase Realtime Database; the app reads them back every 10 seconds and annotates each bus on a MapKit map. On the home screen the app is named **Kolay Ulaşım**, with a teal icon combining a thermometer and passengers. It is a proof-of-concept / portfolio project for anyone interested in a minimal IoT-to-mobile pipeline — the Arduino firmware and the Firebase project itself are **not** part of this repository.
+Ulaşımda Rahatlık ("comfort in transit") is a demo iOS app that puts city buses on a live map together with the temperature inside each bus and how crowded it is. Sensors wired to an Arduino UNO in the vehicle publish those readings to a Firebase Realtime Database; the app reads them back every 10 seconds and annotates each bus on a MapKit map. On the home screen the app is named Kolay Ulaşım. It is a proof-of-concept portfolio project for a minimal IoT-to-mobile pipeline; the Arduino firmware and the Firebase project are not part of this repository.
 
 ## Features
 
-- [x] Live bus locations on a MapKit map, refreshed every 10 seconds
-- [x] Temperature of each bus shown in the annotation callout
-- [x] Crowd level per bus (`Kalabalık Değil` / `Kalabalık` / `Çok Kalabalık`)
-- [x] User location with a recenter button and custom zoom in/out controls
+- Live bus locations on a MapKit map, refreshed every 10 seconds
+- Temperature of each bus shown in the annotation callout
+- Crowd level per bus, shown with the in-app Turkish labels `Kalabalık Değil` (not crowded), `Kalabalık` (crowded) and `Çok Kalabalık` (very crowded)
+- User location with a recenter button and custom zoom in/out controls
 
 ## Tech stack
 
@@ -32,11 +28,11 @@
 
 ### Prerequisites
 
-- macOS with Xcode 27 or newer
-- iOS 15.0+ device or simulator (test targets require iOS 17 or later)
+- macOS with Xcode 27 or later
+- iOS 15.0 or later on a simulator or device (test targets require iOS 17 or later)
 - A Firebase project with Realtime Database enabled
 
-### Install
+### Installation
 
 1. Clone the repository.
 
@@ -44,23 +40,19 @@
    git clone https://github.com/CanDuru4/UlasimdaRahatlik.git
    ```
 
-2. Open `Ulasimda Rahatlik.xcodeproj` in Xcode 27 or later. Swift Package Manager resolves the pinned Firebase packages automatically; CocoaPods is no longer required.
-
+2. Open `Ulasimda Rahatlik.xcodeproj` in Xcode. Swift Package Manager resolves the pinned Firebase packages automatically.
 3. Add your own Firebase config file (see [Configuration](#configuration)).
-
-4. Run the shared `Ulasimda Rahatlik` scheme. Without the Firebase config file the app shows a setup screen instead of calling Firebase. The app asks for location access on first launch (`NSLocationWhenInUseUsageDescription`).
+4. Run the shared `Ulasimda Rahatlik` scheme. Without the Firebase config file the app shows a setup screen instead of calling Firebase. The app asks for location access on first launch.
 
 ### Configuration
 
-No environment variables are used. One credential file is required and is deliberately git-ignored, so you must supply your own:
+No environment variables are used. One credential file is required and is git-ignored, so you must supply your own:
 
 | File | Where it goes | How to get it |
 | --- | --- | --- |
 | `GoogleService-Info.plist` | `UlasimdaRahatlik/` | Firebase console → Project settings → your iOS app |
 
-Never commit that file, or any `Keys.plist`, `.env` or certificate — `.gitignore` already blocks them.
-
-### Expected database shape
+Never commit that file, or any `Keys.plist`, `.env` or certificate; `.gitignore` already blocks them.
 
 `ViewController.BusData()` reads the `Busses` node of the Realtime Database and expects one child per vehicle:
 
@@ -74,13 +66,13 @@ Busses/
     longitude:   Double
 ```
 
-`crowd` is the raw sensor counter: above 50000 the bus is labelled `Çok Kalabalık`, above 25000 `Kalabalık`, otherwise `Kalabalık Değil`.
+`crowd` is the raw sensor counter: above 50000 the bus is labelled very crowded, above 25000 crowded, otherwise not crowded.
 
 ## Project structure
 
 ```
 .
-├── Ulasimda Rahatlik.xcodeproj/     Xcode project (Swift Package Manager)
+├── Ulasimda Rahatlik.xcodeproj/     Xcode project to open (Swift Package Manager)
 ├── UlasimdaRahatlik/
 │   ├── Base Files/                  AppDelegate (Firebase bootstrap), SceneDelegate
 │   ├── Base.lproj/                  LaunchScreen.storyboard
@@ -92,20 +84,22 @@ Busses/
 ├── Ulasimda RahatlikTests/          Unit test target (template)
 ├── Ulasimda RahatlikUITests/        UI test target (template)
 ├── docs/assets/                     README images
-├── CHANGELOG.md
+├── CHANGELOG.md                     Version history
 └── LICENSE
 ```
 
 ## Deployment
 
-There is no CI pipeline and no automated release in this repository; the app is built, signed and run from Xcode. Version history lives in [CHANGELOG.md](CHANGELOG.md).
+There is no CI pipeline and no automated release; the app is built, signed and run from Xcode.
+
+## Screenshots
+
+No screenshots are committed yet.
 
 ## License
 
-Released under the [MIT License](LICENSE).
+MIT. See [LICENSE](LICENSE).
 
-## Meta
+## Author
 
-Can Duru — [canduru.net](https://canduru.net) — canduru2004@gmail.com, support@canduru.net
-
-[https://github.com/CanDuru4](https://github.com/CanDuru4)
+Can Duru — [canduru.net](https://canduru.net)
