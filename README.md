@@ -83,7 +83,7 @@ Busses/
 │   └── Info.plist
 ├── Ulasimda RahatlikTests/          Unit test target (template)
 ├── Ulasimda RahatlikUITests/        UI test target (template)
-├── docs/assets/                     README images
+├── design-assets/banner/            Canduru banner
 ├── CHANGELOG.md                     Version history
 └── LICENSE
 ```

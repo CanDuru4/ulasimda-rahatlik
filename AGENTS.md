@@ -11,7 +11,7 @@ Demo iOS app (home-screen name "Kolay Ulaşım") that shows city buses on a MapK
 - `UlasimdaRahatlik/Helper/`: `LocationManager` (singleton, one-shot location) and `CustomPointAnnotation` (in `CustomAnnotation.swift`).
 - `Ulasimda RahatlikTests/`: unit test target. It holds only the Xcode template and has no real tests.
 - `Ulasimda RahatlikUITests/`: UI tests. They launch with `-FirebaseSetupPreview` and assert on the setup screen.
-- `docs/assets/`: README images. `CHANGELOG.md` has not been updated since 2023.
+- `design-assets/banner/`: the Canduru banner. `CHANGELOG.md` has not been updated since 2023.
 - A local, untracked `Ulasimda Rahatlik.xcworkspace/` folder may exist. It holds only ignored `xcuserdata` (plus an empty `xcshareddata` directory), so `git status` lists it as ignored. The tracked workspace was deliberately removed, so do not recreate or commit it.
 
 ## Commands
