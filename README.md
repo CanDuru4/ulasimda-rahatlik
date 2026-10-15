@@ -20,7 +20,7 @@ Ulaşımda Rahatlık ("comfort in transit") is a demo iOS app that puts city bus
 | Layer | What is used |
 | --- | --- |
 | App | Swift 5.0, UIKit with programmatic Auto Layout, MapKit, CoreLocation |
-| Backend | Firebase Realtime Database (`FirebaseCore`, `FirebaseDatabase`, `FirebaseFirestore`) |
+| Backend | Firebase Realtime Database (`FirebaseCore`, `FirebaseDatabase`, `FirebaseAnalytics`) |
 | Dependencies | Swift Package Manager (Firebase 12.19.1) |
 | Hardware (external) | Arduino UNO with a temperature sensor and a camera |
 
