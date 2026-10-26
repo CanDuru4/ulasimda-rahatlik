@@ -1,5 +1,7 @@
 @AGENTS.md
 
+Validation scope, shared capacity and remote execution follow AGENTS.md. Command examples below do not require a full-suite rerun for every edit.
+
 ## Claude Code
 
 - After editing Swift, verify with the unsigned simulator `build` from AGENTS.md. Pass `-derivedDataPath` pointing at your scratchpad so build products stay out of `~/Library` and the repo.
