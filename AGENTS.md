@@ -1,6 +1,6 @@
 # Ulaşımda Rahatlık
 
-Demo iOS app (home-screen name "Kolay Ulaşım") that shows city buses on a MapKit map with each bus's in-vehicle temperature and crowd level, polled from a Firebase Realtime Database. The data comes from Arduino sensors that are not part of this repo. Status: portfolio project from 2023. It was modernized in September 2026 (SPM, current Xcode) and gets only occasional maintenance. Stack: Swift 5, UIKit (programmatic Auto Layout, no storyboards except the launch screen), MapKit, CoreLocation, Firebase 12.19.1 via Swift Package Manager. The repo is public.
+Demo iOS app (home-screen name "Kolay Ulaşım") that shows city buses on a MapKit map with each bus's in-vehicle temperature and crowd level, polled from a Firebase Realtime Database. The data comes from Arduino sensors that are not part of this repo. Status: portfolio project from 2023, occasional maintenance only. Stack: Swift 5, UIKit (programmatic Auto Layout, no storyboards except the launch screen), MapKit, CoreLocation, Firebase 12.19.1 via Swift Package Manager. The repo is public.
 
 ## Repo map
 
@@ -12,7 +12,7 @@ Demo iOS app (home-screen name "Kolay Ulaşım") that shows city buses on a MapK
 - `Ulasimda RahatlikTests/`: unit test target. It holds only the Xcode template and has no real tests.
 - `Ulasimda RahatlikUITests/`: UI tests. They launch with `-FirebaseSetupPreview` and assert on the setup screen.
 - `design-assets/banner/`: the Canduru banner. `CHANGELOG.md` has not been updated since 2023.
-- A local, untracked `Ulasimda Rahatlik.xcworkspace/` folder may exist. It holds only ignored `xcuserdata` (plus an empty `xcshareddata` directory), so `git status` lists it as ignored. The tracked workspace was deliberately removed, so do not recreate or commit it.
+- A local, git-ignored `Ulasimda Rahatlik.xcworkspace/` (only `xcuserdata`) may exist. The tracked workspace was deliberately removed: do not recreate or commit it.
 
 ## Commands
 
@@ -24,7 +24,7 @@ xcodebuild -project "Ulasimda Rahatlik.xcodeproj" -scheme "Ulasimda Rahatlik" \
   -destination 'platform=iOS Simulator,name=ulasimda-rahatlik-17' test
 ```
 
-- The README requires Xcode 27 or later (the build was verified on 27.0). Firebase resolves through SPM on the first build.
+- Xcode 27 or later (per README). Firebase resolves through SPM on the first build.
 - `test` needs an installed iOS 17+ simulator runtime, because the test targets have a deployment target of 17.0. The app itself targets iOS 15.0.
 - There is no linter, no CI, and no release automation. Signing and running happen from Xcode.
 
